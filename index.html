@@ -2687,6 +2687,29 @@ PAAAAABJRU5ErkJggg==" alt="heade"/>￼</p>
 <pre><code class="language-md">gantt
     dateFormat YYYY-MM-DD
     title Adding GANTT diagram to mermaid
+    
+    section A section
+    completed task      :done, des1, 2014-01-06,2014-01-08
+    Active task     :active, des2, 2014-01-09, 3d
+    Future task     :   des3, after des2, 5d
+    Future task2    :   des4, after des3, 5d
+</code></pre>
+
+<pre><code class="mermaid">gantt
+    dateFormat YYYY-MM-DD
+    title Adding GANTT diagram to mermaid
+    section A section
+    completed task      :done, des1, 2014-01-06,2014-01-08
+    Active task     :active, des2, 2014-01-09, 3d
+    Future task     :   des3, after des2, 5d
+    Future task2    :   des4, after des3, 5d
+</code></pre>
+
+<p>带 excludes 语句的甘特图：</p>
+
+<pre><code class="language-md">gantt
+    dateFormat YYYY-MM-DD
+    title Adding GANTT diagram to mermaid
     excludes weekdays 2014-01-10
     
     section A section
@@ -2699,6 +2722,8 @@ PAAAAABJRU5ErkJggg==" alt="heade"/>￼</p>
 <pre><code class="mermaid">gantt
     dateFormat YYYY-MM-DD
     title Adding GANTT diagram to mermaid
+    excludes weekdays 2014-01-10
+
     section A section
     completed task      :done, des1, 2014-01-06,2014-01-08
     Active task     :active, des2, 2014-01-09, 3d
@@ -4746,7 +4771,12 @@ text.actor {
 <li>在类定义后的单独一行中。例如:</li>
 </ul>
 
-<pre><code class="language-text">classDiagram
+<pre><code class="language-md">classDiagram
+    class Shape
+    &lt;&lt;interface&gt;&gt; Shape
+</code></pre>
+
+<pre><code class="mermaid">classDiagram
     class Shape
     &lt;&lt;interface&gt;&gt; Shape
 </code></pre>
@@ -4755,7 +4785,23 @@ text.actor {
 <li>与类定义一起放在嵌套结构中。例如:</li>
 </ul>
 
-<pre><code class="language-text">classDiagram
+<pre><code class="language-md">classDiagram
+    class Shape {
+        &lt;&lt;interface&gt;&gt;
+        noOfVertices
+        draw()    
+    }
+    class Color {
+        &lt;&lt;enumeration&gt;&gt;
+        RED
+        BLUE
+        GREEN
+        WHITE
+        BLACK
+    }
+</code></pre>
+
+<pre><code class="mermaid">classDiagram
     class Shape {
         &lt;&lt;interface&gt;&gt;
         noOfVertices
@@ -4775,7 +4821,7 @@ text.actor {
 
 <p>可以在类图中输入注释，解析器将忽略它们。注释必须自己一行，并且必须以 <code>%%</code>（双百分号）开头。注释开始到下一个换行符之后的任何文本都将被视为注释，包括任何图语法.</p>
 
-<pre><code class="language-text">classDiagram
+<pre><code class="language-md">classDiagram
 %% This whole line is a comment classDiagram class Shape &lt;&lt;interface&gt;&gt;
 class Shape{
     &lt;&lt;interface&gt;&gt;
@@ -4783,6 +4829,15 @@ class Shape{
     draw()
 }
 </code></pre>
+
+<pre><code class="mermaid">classDiagram
+    %% This whole line is a comment classDiagram class Shape &lt;&lt;interface&gt;&gt;
+    class Shape{
+        &lt;&lt;interface&gt;&gt;
+        noOfVertices
+        draw()
+    }
+    </code></pre>
 
 <h4 id="toc_121">样式</h4>
 
@@ -5160,7 +5215,7 @@ g.classGroup line {
     State4 --&gt; [*]
 </code></pre>
 
-<pre><code class="language-text">stateDiagram
+<pre><code class="mermaid">stateDiagram
     state fork_state &lt;&lt;fork&gt;&gt;
       [*] --&gt; fork_state
       fork_state --&gt; State2
