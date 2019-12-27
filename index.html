@@ -1110,7 +1110,7 @@ Prism.languages.yaml={scalar:{pattern:/([\-:]\s*(?:![^\s]+)?[ \t]*[|>])[ \t]*(?:
 
 <p>在 8.4 版本中，类图有了一些新的特性、bug修复和文档。8.4 版本中的另一个新特性是新的图类型，即状态图。</p>
 
-<pre><code class="language-mermaid">classDiagram
+<pre><code class="mermaid">classDiagram
     Animal &lt;|-- Duck
     Animal &lt;|-- Fish
     Animal &lt;|-- Zebra
@@ -1137,7 +1137,7 @@ Prism.languages.yaml={scalar:{pattern:/([\-:]\s*(?:![^\s]+)?[ \t]*[|>])[ \t]*(?:
     Zebra : +run()
 </code></pre>
 
-<pre><code class="language-mermaid">stateDiagram
+<pre><code class="mermaid">stateDiagram
     [*] --&gt; First
     First --&gt; Second
     First --&gt; Third
@@ -2647,7 +2647,7 @@ PAAAAABJRU5ErkJggg==" alt="heade"/>￼</p>
     C--&gt;D;
 </code></pre>
 
-<pre><code class="language-mermaid">graph TD;
+<pre><code class="mermaid">graph TD;
     A--&gt;B;
     A--&gt;C;
     B--&gt;D;
@@ -2669,7 +2669,7 @@ PAAAAABJRU5ErkJggg==" alt="heade"/>￼</p>
     Bob--&gt;&gt;John: Jolly good!
 </code></pre>
 
-<pre><code class="language-mermaid">sequenceDiagram
+<pre><code class="mermaid">sequenceDiagram
     participant Alice
     participant Bob
     Alice-&gt;&gt;John: Hello John, how are you?
@@ -2696,7 +2696,7 @@ PAAAAABJRU5ErkJggg==" alt="heade"/>￼</p>
     Future task2    :   des4, after des3, 5d
 </code></pre>
 
-<pre><code class="language-mermaid">gantt
+<pre><code class="mermaid">gantt
     dateFormat YYYY-MM-DD
     title Adding GANTT diagram to mermaid
     section A section
@@ -2708,7 +2708,7 @@ PAAAAABJRU5ErkJggg==" alt="heade"/>￼</p>
 
 <p><strong>MWeb 不支持甘特图中的 excludes 语句。</strong></p>
 
-<pre><code class="language-mermaid">gantt
+<pre><code class="mermaid">gantt
         dateFormat  YYYY-MM-DD
         title Adding GANTT diagram functionality to mermaid
         section A section
@@ -2743,7 +2743,7 @@ PAAAAABJRU5ErkJggg==" alt="heade"/>￼</p>
     Class08 &lt;--&gt; C2: Cool label
 </code></pre>
 
-<pre><code class="language-mermaid">classDiagram
+<pre><code class="mermaid">classDiagram
     Class01 &lt;|-- AveryLongClass : Cool
     Class03 *-- Class04
     Class05 o-- Class06
@@ -2779,7 +2779,7 @@ commit
 merge newbranch
 </code></pre>
 
-<pre><code class="language-mermaid">gitGraph:
+<pre><code class="mermaid">gitGraph:
 options
 {
     &quot;nodeSpacing&quot;: 150,
@@ -3249,7 +3249,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
              &quot;Time spent watching it&quot; : 10
 </code></pre>
 
-<pre><code class="language-mermaid">pie title NETFLIX
+<pre><code class="mermaid">pie title NETFLIX
              &quot;Time spent looking for movie&quot; : 90
              &quot;Time spent watching it&quot; : 10
 </code></pre>
@@ -3260,7 +3260,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
          &quot;NOSE&quot; : 45
 </code></pre>
 
-<pre><code class="language-mermaid">pie title What Voldemort doesn&#39;t have?
+<pre><code class="mermaid">pie title What Voldemort doesn&#39;t have?
          &quot;FRIENDS&quot; : 2
          &quot;FAMILY&quot; : 3
          &quot;NOSE&quot; : 45
@@ -3279,7 +3279,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     Alice-&gt;John: Yes... John, how are you?
 </code></pre>
 
-<pre><code class="language-mermaid">sequenceDiagram
+<pre><code class="mermaid">sequenceDiagram
     Alice -&gt;&gt; Bob: Hello Bob, how are you?
     Bob--&gt;&gt;John: How about you John?
     Bob--x Alice: I am good thanks!
@@ -3297,7 +3297,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     A --&gt; D(Round Rect) --&gt; C
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     A[Sequence Rect] --&gt;|Link Text| B((Circle)) --&gt; C{Rhombus}
     A --&gt; D(Round Rect) --&gt; C
 </code></pre>
@@ -3321,7 +3321,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     class E,H Green
 </code></pre>
 
-<pre><code class="language-mermaid">graph TB
+<pre><code class="mermaid">graph TB
     E[Square Shape] --&gt; F((Circle Shape))
     H((Inner / circle&lt;br&gt;and some odd&lt;br&gt;special characters)) --&gt; I&gt;Really long text with linebreak&lt;br&gt;in an Odd Shape]
     H --&gt; J(,.?!+-*ز)
@@ -3354,7 +3354,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     end
 </code></pre>
 
-<pre><code class="language-mermaid">sequenceDiagram
+<pre><code class="mermaid">sequenceDiagram
     loop Daily query
         Alice -&gt;&gt; Bob: Hello Bob, how are you?
         alt is sick
@@ -3383,7 +3383,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     Bob --&gt;&gt; John: Jolly good!
 </code></pre>
 
-<pre><code class="language-mermaid">sequenceDiagram
+<pre><code class="mermaid">sequenceDiagram
     participant Alice
     participant Bob
     Alice -&gt;&gt; John: Hello John, how are you?
@@ -3413,7 +3413,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     Start--&gt;Stop
 </code></pre>
 
-<pre><code class="language-mermaid">graph TD
+<pre><code class="mermaid">graph TD
     Start--&gt;Stop
 </code></pre>
 
@@ -3421,7 +3421,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     Start--&gt;Stop
 </code></pre>
 
-<pre><code class="language-mermaid">graph TB
+<pre><code class="mermaid">graph TB
     Start--&gt;Stop
 </code></pre>
 
@@ -3431,7 +3431,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     Start --&gt; Stop
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR 
+<pre><code class="mermaid">graph LR 
     Start --&gt; Stop
 </code></pre>
 
@@ -3453,7 +3453,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     id
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     id
 </code></pre>
 
@@ -3467,7 +3467,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     id1[This is the text in the box]
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     id1[This is the text in the box]
 </code></pre>
 
@@ -3477,7 +3477,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     id1(This is the text in the box)
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     id1(This is the text in the box)
 </code></pre>
 
@@ -3487,7 +3487,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     id1((This is the text in the circle))
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     id1((This is the text in the circle))
 </code></pre>
 
@@ -3497,7 +3497,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     id1&gt;This is the text in the box]
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     id1&gt;This is the text in the box]
 </code></pre>
 
@@ -3509,7 +3509,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     id{This is the text in the box}
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     id{This is the text in the box}
 </code></pre>
 
@@ -3519,7 +3519,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     id1{{This is the text in the box}}
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     id1{{This is the text in the box}}
 </code></pre>
 
@@ -3529,7 +3529,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     id1[/This is the text in the box/]
 </code></pre>
 
-<pre><code class="language-mermaid">graph TD
+<pre><code class="mermaid">graph TD
     id1[/This is the text in the box/]
 </code></pre>
 
@@ -3539,7 +3539,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     id1[\This is the text in the box\]
 </code></pre>
 
-<pre><code class="language-mermaid">graph TD
+<pre><code class="mermaid">graph TD
     id1[\This is the text in the box\]
 </code></pre>
 
@@ -3549,7 +3549,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     A[/Christmas\]
 </code></pre>
 
-<pre><code class="language-mermaid">graph TD
+<pre><code class="mermaid">graph TD
     A[/Christmas\]
 </code></pre>
 
@@ -3559,7 +3559,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     B[\Go shopping/]
 </code></pre>
 
-<pre><code class="language-mermaid">graph TD
+<pre><code class="mermaid">graph TD
     B[\Go shopping/]
 </code></pre>
 
@@ -3573,7 +3573,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     A--&gt;B
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     A--&gt;B
 </code></pre>
 
@@ -3583,7 +3583,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     A --- B
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     A --- B
 </code></pre>
 
@@ -3593,7 +3593,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     A-- This is the text ---B
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     A-- This is the text ---B
 </code></pre>
 
@@ -3603,7 +3603,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     A--&gt;|text|B
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     A--&gt;|text|B
 </code></pre>
 
@@ -3613,7 +3613,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     A-- text --&gt;B
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     A-- text --&gt;B
 </code></pre>
 
@@ -3623,7 +3623,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     A-.-&gt;B;
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR;
+<pre><code class="mermaid">graph LR;
     A-.-&gt;B;
 </code></pre>
 
@@ -3633,7 +3633,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     A-. text .-&gt; B
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     A-. text .-&gt; B
 </code></pre>
 
@@ -3643,7 +3643,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     A ==&gt; B
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     A ==&gt; B
 </code></pre>
 
@@ -3653,7 +3653,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     A == text ==&gt; B
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     A == text ==&gt; B
 </code></pre>
 
@@ -3665,7 +3665,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     A -- text --&gt; B -- text2 --&gt; C
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     A -- text --&gt; B -- text2 --&gt; C
 </code></pre>
 
@@ -3677,7 +3677,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     id1[&quot;This is the (text) in the box&quot;]
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     id1[&quot;This is the (text) in the box&quot;]
 </code></pre>
 
@@ -3689,7 +3689,7 @@ bindEventHandler(&#39;change&#39;, &#39;code&#39;, textFieldUpdated);
     A[&quot;A double quote:#quot;&quot;] --&gt;B[&quot;A dec char:#9829;&quot;]
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     A[&quot;A double quote:#quot;&quot;] --&gt;B[&quot;A dec char:#9829;&quot;]
 </code></pre>
 
@@ -3715,7 +3715,7 @@ end
     end
 </code></pre>
 
-<pre><code class="language-mermaid">graph TB
+<pre><code class="mermaid">graph TB
     c1--&gt;a2
     subgraph one
     a1--&gt;a2
@@ -3749,7 +3749,7 @@ end
 &lt;/script&gt;
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR;
+<pre><code class="mermaid">graph LR;
     A--&gt;B;
     click A callback &quot;Tooltip for a callback&quot;
     click B &quot;http://www.github.com&quot; &quot;This is a tooltip for a link&quot;
@@ -3800,7 +3800,7 @@ end
     A -- text --&gt; B -- text2 --&gt; C
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
 %% this is a comment A -- text --&gt; B{node}
     A -- text --&gt; B -- text2 --&gt; C
 </code></pre>
@@ -3824,7 +3824,7 @@ end
     style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     id1(Start)--&gt;id2(Stop)
     style id1 fill:#f9f,stroke:#333,stroke-width:4px
     style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5
@@ -3872,7 +3872,7 @@ end
     class A cssClass;
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR;
+<pre><code class="mermaid">graph LR;
     A--&gt;B[AAA&lt;span&gt;BBB&lt;/span&gt;];
     B--&gt;D;
     class A cssClass;
@@ -3898,7 +3898,7 @@ end
     B--&gt;E(A fa:fa-camera-retro perhaps?);
 </code></pre>
 
-<pre><code class="language-mermaid">graph TD
+<pre><code class="mermaid">graph TD
     B[&quot;fa:fa-twitter for peace&quot;]
     B--&gt;C[fa:fa-ban forbidden]
     B--&gt;D(fa:fa-spinner);
@@ -3921,7 +3921,7 @@ end
     C --&gt;|Two| E[Result two]
 </code></pre>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="mermaid">graph LR
     A[Hard edge] --&gt;|link text| B(Round edge)
     B --&gt;  C(Decision)
     C --&gt;|One| D[Result one]
@@ -3950,7 +3950,7 @@ end
     John--&gt;&gt;Alice: Great!
 </code></pre>
 
-<pre><code class="language-mermaid">sequenceDiagram
+<pre><code class="mermaid">sequenceDiagram
     Alice-&gt;&gt;John: Hello John, how are you?
     John--&gt;&gt;Alice: Great!
 </code></pre>
@@ -3968,7 +3968,7 @@ end
     John--&gt;&gt;Alice: Great!
 </code></pre>
 
-<pre><code class="language-mermaid">sequenceDiagram
+<pre><code class="mermaid">sequenceDiagram
     participant John
     participant Alice
     Alice-&gt;&gt;John: Hello John, how are you?
@@ -3986,7 +3986,7 @@ end
     J-&gt;&gt;A: Great!
 </code></pre>
 
-<pre><code class="language-mermaid">sequenceDiagram
+<pre><code class="mermaid">sequenceDiagram
     participant A as Alice
     participant J as John
     A-&gt;&gt;J: Hello John, how are you?
@@ -4049,7 +4049,7 @@ end
     deactivate John
 </code></pre>
 
-<pre><code class="language-mermaid">sequenceDiagram
+<pre><code class="mermaid">sequenceDiagram
     Alice-&gt;&gt;John: Hello John, how are you?
     activate John
     John--&gt;&gt;Alice: Great!
@@ -4063,7 +4063,7 @@ end
     John--&gt;&gt;-Alice: Great!
 </code></pre>
 
-<pre><code class="language-mermaid">sequenceDiagram
+<pre><code class="mermaid">sequenceDiagram
     Alice-&gt;&gt;+John: Hello John, how are you?
     John--&gt;&gt;-Alice: Great!
 </code></pre>
@@ -4077,7 +4077,7 @@ end
     John--&gt;&gt;-Alice: I feel great!
 </code></pre>
 
-<pre><code class="language-mermaid">sequenceDiagram
+<pre><code class="mermaid">sequenceDiagram
     Alice-&gt;&gt;+John: Hello John, how are you?
     Alice-&gt;&gt;+John: John, can you hear me?
     John--&gt;&gt;-Alice: Hi Alice, I can hear you!
@@ -4095,7 +4095,7 @@ end
     Note right of John: Text in note
 </code></pre>
 
-<pre><code class="language-mermaid">sequenceDiagram
+<pre><code class="mermaid">sequenceDiagram
     participant John
     Note right of John: Text in note
 </code></pre>
@@ -4107,7 +4107,7 @@ end
     Note over Alice,John: A typical interaction
 </code></pre>
 
-<pre><code class="language-mermaid">sequenceDiagram
+<pre><code class="mermaid">sequenceDiagram
     Alice-&gt;John: Hello John, how are you?
     Note over Alice,John: A typical interaction
 </code></pre>
@@ -4130,7 +4130,7 @@ end
     end
 </code></pre>
 
-<pre><code class="language-mermaid">sequenceDiagram
+<pre><code class="mermaid">sequenceDiagram
     Alice-&gt;John: Hello John, how are you?
     loop Every minute
         John--&gt;Alice: Great!
@@ -4169,7 +4169,7 @@ end
     end
 </code></pre>
 
-<pre><code class="language-mermaid">sequenceDiagram
+<pre><code class="mermaid">sequenceDiagram
     Alice-&gt;&gt;Bob: Hello Bob, how are you?
     alt is sick
         Bob-&gt;&gt;Alice: Not so good :(
@@ -4213,7 +4213,7 @@ end
     John--&gt;&gt;-Alice: Yeah! See you there.
 </code></pre>
 
-<pre><code class="language-mermaid">sequenceDiagram
+<pre><code class="mermaid">sequenceDiagram
     rect rgb(191, 223, 255)
         Note right of Alice: Alice calls John.
         Alice-&gt;&gt;+John: Hello John, how are you?
@@ -4237,7 +4237,7 @@ end
     John--&gt;&gt;Alice: Great!
 </code></pre>
 
-<pre><code class="language-mermaid">sequenceDiagram
+<pre><code class="mermaid">sequenceDiagram
     Alice-&gt;&gt;John: Hello John, how are you?
     %% this is a comment
     John--&gt;&gt;Alice: Great!
@@ -4455,7 +4455,7 @@ text.actor {
       }
 </code></pre>
 
-<pre><code class="language-mermaid"> classDiagram
+<pre><code class="mermaid"> classDiagram
       Animal &lt;|-- Duck
       Animal &lt;|-- Fish
       Animal &lt;|-- Zebra
@@ -4498,7 +4498,7 @@ text.actor {
     BankAccount : +withdrawl(amount)
 </code></pre>
 
-<pre><code class="language-mermaid">classDiagram
+<pre><code class="mermaid">classDiagram
     class BankAccount
     BankAccount : +String owner
     BankAccount : +Bigdecimal balance
@@ -4520,7 +4520,7 @@ text.actor {
     Vehicle &lt;|-- Car
 </code></pre>
 
-<pre><code class="language-mermaid">classDiagram
+<pre><code class="mermaid">classDiagram
     class Animal
     Vehicle &lt;|-- Car
 </code></pre>
@@ -4558,7 +4558,7 @@ text.actor {
     BankAccount : +withdrawl(amount)
 </code></pre>
 
-<pre><code class="language-mermaid">classDiagram
+<pre><code class="mermaid">classDiagram
     class BankAccount
     BankAccount : +String owner
     BankAccount : +BigDecimal balance
@@ -4579,7 +4579,7 @@ text.actor {
     }
 </code></pre>
 
-<pre><code class="language-mermaid">classDiagram
+<pre><code class="mermaid">classDiagram
     class BankAccount{
         +String owner
         +BigDecimal balance
@@ -4646,7 +4646,7 @@ text.actor {
     classK .. classL
 </code></pre>
 
-<pre><code class="language-mermaid">classDiagram
+<pre><code class="mermaid">classDiagram
     classA &lt;|-- classB
     classC *-- classD
     classE o-- classF
@@ -4666,7 +4666,7 @@ text.actor {
     classK .. classL
 </code></pre>
 
-<pre><code class="language-mermaid">classDiagram
+<pre><code class="mermaid">classDiagram
     classA --|&gt; classB
     classC --* classD
     classE --o classF
@@ -4688,7 +4688,7 @@ text.actor {
     classE o-- classF : association
 </code></pre>
 
-<pre><code class="language-mermaid">classDiagram
+<pre><code class="mermaid">classDiagram
     classA &lt;|-- classB : implements
     classC *-- classD : composition
     classE o-- classF : association
@@ -4723,7 +4723,7 @@ text.actor {
     Galaxy --&gt; &quot;many&quot; Star : Contains
 </code></pre>
 
-<pre><code class="language-mermaid">classDiagram
+<pre><code class="mermaid">classDiagram
     Customer &quot;1&quot; --&gt; &quot;*&quot; Ticket
     Student &quot;1&quot; --&gt; &quot;1..*&quot; Course
     Galaxy --&gt; &quot;many&quot; Star : Contains
@@ -4957,7 +4957,7 @@ g.classGroup line {
     Crash --&gt; [*]
 </code></pre>
 
-<pre><code class="language-mermaid">stateDiagram
+<pre><code class="mermaid">stateDiagram
     [*] --&gt; Still
     Still --&gt; [*]
     
@@ -4977,7 +4977,7 @@ g.classGroup line {
     s1
 </code></pre>
 
-<pre><code class="language-mermaid">stateDiagram
+<pre><code class="mermaid">stateDiagram
     s1
 </code></pre>
 
@@ -4987,7 +4987,7 @@ g.classGroup line {
     state &quot;This is a state description&quot; as s2
 </code></pre>
 
-<pre><code class="language-mermaid">stateDiagram
+<pre><code class="mermaid">stateDiagram
     state &quot;This is a state description&quot; as s2
 </code></pre>
 
@@ -4997,7 +4997,7 @@ g.classGroup line {
     s2 : This is a state description
 </code></pre>
 
-<pre><code class="language-mermaid">stateDiagram
+<pre><code class="mermaid">stateDiagram
     s2 : This is a state description
 </code></pre>
 
@@ -5011,7 +5011,7 @@ g.classGroup line {
     s1 --&gt; s2
 </code></pre>
 
-<pre><code class="language-mermaid">stateDiagram
+<pre><code class="mermaid">stateDiagram
     s1 --&gt; s2
 </code></pre>
 
@@ -5021,7 +5021,7 @@ g.classGroup line {
     s1 --&gt; s2: A transition
 </code></pre>
 
-<pre><code class="language-mermaid">stateDiagram
+<pre><code class="mermaid">stateDiagram
     s1 --&gt; s2: A transition
 </code></pre>
 
@@ -5034,7 +5034,7 @@ g.classGroup line {
     s1 --&gt; [*]
 </code></pre>
 
-<pre><code class="language-mermaid">stateDiagram
+<pre><code class="mermaid">stateDiagram
     [*] --&gt; s1
     s1 --&gt; [*]
 </code></pre>
@@ -5053,7 +5053,7 @@ g.classGroup line {
     }
 </code></pre>
 
-<pre><code class="language-mermaid">stateDiagram
+<pre><code class="mermaid">stateDiagram
     [*] --&gt; First
     state First {
         [*] --&gt; second
@@ -5081,7 +5081,7 @@ g.classGroup line {
     }
 </code></pre>
 
-<pre><code class="language-mermaid">stateDiagram
+<pre><code class="mermaid">stateDiagram
     [*] --&gt; First
     
     state First {
@@ -5122,7 +5122,7 @@ g.classGroup line {
     }
 </code></pre>
 
-<pre><code class="language-mermaid">stateDiagram
+<pre><code class="mermaid">stateDiagram
     [*] --&gt; First
     First --&gt; Second
     First --&gt; Third
@@ -5188,7 +5188,7 @@ g.classGroup line {
     note left of State2 : This is the note to the left
 </code></pre>
 
-<pre><code class="language-mermaid">stateDiagram
+<pre><code class="mermaid">stateDiagram
     State1: The state with a note
     note right of State1
         Important information! You can write
@@ -5220,7 +5220,7 @@ g.classGroup line {
         }
 </code></pre>
 
-<pre><code class="language-mermaid">stateDiagram
+<pre><code class="mermaid">stateDiagram
         [*] --&gt; Active
 
         state Active {
@@ -5252,7 +5252,7 @@ g.classGroup line {
     Crash --&gt; [*]
 </code></pre>
 
-<pre><code class="language-mermaid">stateDiagram
+<pre><code class="mermaid">stateDiagram
     [*] --&gt; Still
     Still --&gt; [*]
     %% this is a comment
@@ -5285,7 +5285,7 @@ g.classGroup line {
     another task    : 24d
 </code></pre>
 
-<pre><code class="language-mermaid">gantt
+<pre><code class="mermaid">gantt
     title A Gantt Diagram
     dateFormat YYYY-MM-DD
     section Section
@@ -5327,7 +5327,7 @@ g.classGroup line {
     Add another diagram to demo page    :48h
 </code></pre>
 
-<pre><code class="language-mermaid">gantt
+<pre><code class="mermaid">gantt
     dateFormat YYYY-MM-DD
     title Adding GANTT diagram functionality to mermaid
     
@@ -5497,7 +5497,7 @@ x       1410715640579       Unix 毫秒时间戳
     another task    :24d
 </code></pre>
 
-<pre><code class="language-mermaid">gantt
+<pre><code class="mermaid">gantt
     title A Gantt Diagram
     %% this is a comment
     dateFormat YYYY-MM-DD
@@ -5596,7 +5596,7 @@ x       1410715640579       Unix 毫秒时间戳
     &quot;Rats&quot; : 15
 </code></pre>
 
-<pre><code class="language-mermaid">pie title Pets adopted by volunteers
+<pre><code class="mermaid">pie title Pets adopted by volunteers
     &quot;Dogs&quot; : 386
     &quot;Cats&quot; : 85
     &quot;Rats&quot; : 15
@@ -5633,7 +5633,7 @@ x       1410715640579       Unix 毫秒时间戳
     &quot;Iron&quot; : 5
 </code></pre>
 
-<pre><code class="language-mermaid">pie
+<pre><code class="mermaid">pie
     title key elements in Product X
     &quot;Calcium&quot; : 42.96
     &quot;Potassium&quot; : 50.05
@@ -5754,7 +5754,7 @@ graph.getEdges()
 <pre><code class="language-md">info
 </code></pre>
 
-<pre><code class="language-mermaid">info
+<pre><code class="mermaid">info
 </code></pre>
 
 </div></body>
