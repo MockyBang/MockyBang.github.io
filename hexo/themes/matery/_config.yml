@@ -153,8 +153,8 @@ wordCount:
 mermaid: ## mermaid url https://github.com/knsv/mermaid
   enable: true      ## default true
   version: "8.5.0" # default v7.1.2
-  #options:      ## find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
-  startOnload: true   ## default true
+  options:  ## find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+    startOnload: true   ## default true
 
 # Whether to activate the 'love' effect of clicking on the page.
 # 是否激活点击页面的'爱心'效果，默认激活.

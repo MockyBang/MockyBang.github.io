@@ -8,12 +8,14 @@ date: 2020-05-09 17:29:47
 password:
 summary:
 tags:
+- mermaid
+- markdown
 categories:
+- 图表工具
 ---
 对最新的 mermaid 文档进行翻译。复杂的流程图代码是看完整个文档，根据它的图片自己写的对应的 mermaid 代码（官方文档未提供）。有些功能需要特定版本的 mermaid 支持，如状态图必须是 v8.4 版本的。官方文档对甘特图的说明写的很简略，而且在样式类章节中出现不是该类图的属性，故删除。
 
 # mermaid
-[TOC]
 
 ## 开始
 ### mermaid
@@ -1006,12 +1008,14 @@ graph LR
 
 ```md
 graph LR
-    id1{ {This is the text in the box} }
+    id1{{This is the text in the box}}
 ```
 
 ```mermaid
 graph LR
-    id1{ {This is the text in the box} }
+    id1{{This is the text in the box}}
+    id2{{This is the second text in the box}}
+    id3{{This is the third text in the box}}
 ```
 
 ##### 平行四边形节点
@@ -2211,7 +2215,7 @@ classDiagram
 ```mermaid
 classDiagram
     class Shape
-    <<interface>> Shape
+        <<interface>> Shape
 ```
 
 - 与类定义一起放在嵌套结构中。例如:
