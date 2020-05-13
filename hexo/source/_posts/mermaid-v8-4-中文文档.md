@@ -1014,8 +1014,6 @@ graph LR
 ```mermaid
 graph LR
     id1{{This is the text in the box}}
-    id2{{This is the second text in the box}}
-    id3{{This is the third text in the box}}
 ```
 
 ##### 平行四边形节点
