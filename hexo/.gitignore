@@ -5,6 +5,13 @@ db.json
 !node_modules/
 node_modules/*
 
+# only nunjucks subdir
 !node_modules/nunjucks/
+
+# only hexo-prism-plugin/src subdir
+!node_modules/hexo-prism-plugin/
+node_modules/hexo-prism-plugin/*
+!node_modules/hexo-prism-plugin/src
+
 public/
 .deploy*/
