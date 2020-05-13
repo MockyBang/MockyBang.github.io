@@ -53,7 +53,7 @@
             <% page.posts.forEach(post => { %>
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="<%- url_for(post.path) %>" target="_blank">
+                    <a href="<%- url_for(post.path) %>" target="_self">
                         <div class="card-image">
                             <% if (post.img) { %>
                             <img src="<%= post.img %>" class="responsive-img" alt="<%- post.title %>">
@@ -91,7 +91,7 @@
                                 <% if (post.categories && post.categories.length > 0) { %>
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 <% post.categories.forEach(category => { %>
-                                <a href="<%- url_for(category.path) %>" class="post-category" target="_blank">
+                                <a href="<%- url_for(category.path) %>" class="post-category" target="_self">
                                     <%- category.name %>
                                 </a>
                                 <% }); %>
@@ -103,7 +103,7 @@
                     <% if(post.tags && post.tags.length > 0) { %>
                     <div class="card-action article-tags">
                         <% post.tags.forEach(tag => { %>
-                        <a href="<%- url_for(tag.path) %>" target="_blank">
+                        <a href="<%- url_for(tag.path) %>" target="_self">
                             <span class="chip bg-color"><%= tag.name %></span>
                         </a>
                         <% }); %>
