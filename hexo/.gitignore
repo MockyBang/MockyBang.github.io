@@ -2,16 +2,20 @@
 Thumbs.db
 db.json
 *.log
-!node_modules/
-node_modules/*
+node_modules/
+
+# ---start---
+#!node_modules/
+#node_modules/*
 
 # only nunjucks subdir
-!node_modules/nunjucks/
+#!node_modules/nunjucks/
 
 # only hexo-prism-plugin/src subdir
-!node_modules/hexo-prism-plugin/
-node_modules/hexo-prism-plugin/*
-!node_modules/hexo-prism-plugin/src
+#!node_modules/hexo-prism-plugin/
+#node_modules/hexo-prism-plugin/*
+#!node_modules/hexo-prism-plugin/src
+# ---end---
 
 public/
 .deploy*/
